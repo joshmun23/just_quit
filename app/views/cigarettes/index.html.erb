@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="small-12 columns">
+
+    <ul>
+      <% @cigarettes.each do |year, cigarette| %>
+        <div class="small-6 columns">
+          <h3><%= year %></h3>
+          <% cigarette.each do |cig| %>
+            <ul>
+              <li><%= cig.rank %></li>
+              <li><%= cig.location.state %></li>
+              <li><%= cig.cost %></li>
+              <li><%= cig.change %></li>
+            </ul>
+          <% end %>
+        </div>
+      <% end %>
+    </ul>
+
+  </div>
+</div>

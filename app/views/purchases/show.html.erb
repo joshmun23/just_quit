@@ -1,0 +1,44 @@
+<div class="small-12 columns">
+  <div class="small-2 columns transactions">
+    <ul>
+      </br>
+        <% sum = 0 %>
+        <% start_date = nil %>
+        <% end_date = nil %>
+      <% current_user.purchases.each_with_index do |purchase, index| %>
+        <% start_date ||= purchase.created_at %>
+        <% end_date = purchase.created_at if index == current_user.purchases.count - 1 %>
+
+        <li><%= purchase.created_at %> <%= purchase.cost %></li></br>
+
+        <% sum += purchase.cost %>
+
+      <% end %>
+
+      <% total_seconds = (end_date - start_date) %>
+      <% total_minutes = total_seconds/60 %>
+      <% total_hours = total_seconds %>
+    </ul>
+  </div>
+
+  <div class="small-10 columns">
+    </br>
+    <h2>In the past <%= total_minutes.round %> minutes, you bought <%= current_user.purchases.count %> packs of cigarettes at an cost of <%= current_user.purchases.first.cost %>
+    </h2>
+
+    </br>
+
+    <h2>As a result, you spent $<%= sum.round(2) %> in <%= total_minutes.round %> minutes</h2>
+
+    </br>
+    <h1>
+      <% income = 0 %>
+      <% NetWorth.where(user_id: current_user.id).each do |worth| %>
+
+        <% income += worth.income %>
+      <% end %>
+
+      You spent <%= ((sum / income) * 100.to_f).round(2) %>% of your money on cigarettes
+    </h1>
+  </div>
+</div>

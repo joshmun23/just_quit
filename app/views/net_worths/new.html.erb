@@ -1,0 +1,8 @@
+<div class="small-12 columns container">
+  <%= form_for [@user, @net_worth] do |f| %>
+    <%= f.label :income %>
+    <%= f.text_field :income, class: "income-field" %>
+
+    <%= f.submit "Post Income", class: "button income-button" %>
+  <% end %>
+</div>
