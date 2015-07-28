@@ -1,4 +1,31 @@
-<p>
-  Modify me in `app/views/homes/index.html.erb` or change the root directive in
-  `config/routes.rb`
-</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LetsQuit</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <section class="row home-streak">
+    <div class="small-12 medium-12 large-12 columns">
+      <div class="streak-counter">1</div class="streak-counter">
+    </div>
+    <div class="small-12 medium-12 large-12 columns">
+      <div class="streak-text">day since your last cigarette</div class="streak-counter">
+    </div>
+
+  </section>
+
+  <div class="small-6 medium-6 large-6 columns">
+    <a href="#" class="now button radius right">Radius Button</a>
+  </div>
+
+  <div class="small-6 medium-6 large-6 columns left">
+    <a href="#" class="now button radius left">Radius Button</a>
+  </div>
+
+  <%= javascript_include_tag 'application' %>
+  <%= yield :extra_footer %>
+</body>
+</html>

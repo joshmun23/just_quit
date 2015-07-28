@@ -1,0 +1,91 @@
+$black: #000;
+$white: #fff;
+$quicksand-font: 'Quicksand', sans-serif;
+$streak-counter-size: 30rem;
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  $streak-counter-size: 40rem;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  $streak-counter-size: 40rem;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  $streak-counter-size: 40rem;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+section.row.home-streak {
+}
+
+section.row.home-streak {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  height: 80vh;
+  background-color: $black;
+  display: block;
+
+  div.small-12.medium-12.large-12.columns {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid $white;
+    position: absolute;
+    margin-top: 2.5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $streak-counter-size;
+    height: $streak-counter-size;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+
+    top: 20vh;
+    text-align: center;
+
+    div.streak-counter, div.streak-text {
+      font-family: $quicksand-font;
+      font-size: 12.5rem;
+      color: $white;
+      display: block;
+    }
+
+    div.streak-counter {
+      margin-top: 5rem;
+    }
+    div.streak-text {
+      margin-top: 32rem;
+      font-size: 2rem;
+
+    }
+  }
+
+
+}
+
+section.row {
+  max-width: 100%;
+}
+
+.now.button.radius {
+  border: 1px solid black;
+}

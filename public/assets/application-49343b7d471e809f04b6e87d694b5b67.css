@@ -2424,14 +2424,14 @@ button, .button {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #008CBA;
-  border-color: #007095;
+  background-color: #000000;
+  border-color: black;
   color: #FFFFFF;
   transition: background-color 300ms ease-out;
 }
 /* line 162, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_buttons.scss */
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #007095;
+  background-color: black;
 }
 /* line 168, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_buttons.scss */
 button:hover, button:focus, .button:hover, .button:focus {
@@ -2557,8 +2557,8 @@ button.round, .button.round {
 }
 /* line 241, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_buttons.scss */
 button.disabled, button[disabled], .button.disabled, .button[disabled] {
-  background-color: #008CBA;
-  border-color: #007095;
+  background-color: #000000;
+  border-color: black;
   color: #FFFFFF;
   cursor: default;
   opacity: 0.7;
@@ -2566,7 +2566,7 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
 }
 /* line 162, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #007095;
+  background-color: black;
 }
 /* line 168, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
@@ -2574,7 +2574,7 @@ button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[dis
 }
 /* line 179, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #008CBA;
+  background-color: #000000;
 }
 /* line 242, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_buttons.scss */
 button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
@@ -9157,6 +9157,68 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/* line 36, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
+section.row.home-streak {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  height: 80vh;
+  background-color: #000;
+  display: block;
+}
+/* line 46, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
+section.row.home-streak div.small-12.medium-12.large-12.columns {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #fff;
+  position: absolute;
+  margin-top: 2.5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  top: 20vh;
+  text-align: center;
+}
+/* line 65, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
+section.row.home-streak div.small-12.medium-12.large-12.columns div.streak-counter, section.row.home-streak div.small-12.medium-12.large-12.columns div.streak-text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12.5rem;
+  color: #fff;
+  display: block;
+}
+/* line 72, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
+section.row.home-streak div.small-12.medium-12.large-12.columns div.streak-counter {
+  margin-top: 5rem;
+}
+/* line 75, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
+section.row.home-streak div.small-12.medium-12.large-12.columns div.streak-text {
+  margin-top: 32rem;
+  font-size: 2rem;
+}
+
+/* line 85, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
+section.row {
+  max-width: 100%;
+}
+
+/* line 89, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
+.now.button.radius {
+  border: 1px solid black;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -9175,6 +9237,10 @@ th.hide-for-touch {
 
  */
 
+
+.row {
+  max-width: 100%;
+}
 
 li {
   list-style: none;
@@ -9205,7 +9271,7 @@ li {
 }
 .container {
   text-align: center;
-  margin-top: 20%;
+  margin-top: 20%;x
 }
 
 .income-field {
@@ -9213,3 +9279,6 @@ li {
   border-radius: 5em;
 }
 
+.button {
+  border-radius: 5em;
+}
