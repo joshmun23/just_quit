@@ -18,9 +18,9 @@
     <section class="top-bar-section">
       <ul class="right">
         <%- if current_user -%>
-          <li><%= link_to 'Add Income', new_user_net_worth_path(current_user) %></li>
+          <!-- <li><%= link_to 'Add Income', new_user_net_worth_path(current_user) %></li>
 
-          <li><%= link_to 'Add a purchase', new_user_purchase_path(current_user) %></li>
+          <li><%= link_to 'Add a purchase', new_user_purchase_path(current_user) %></li> -->
 
           <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <%- else -%>
