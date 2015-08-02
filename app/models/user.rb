@@ -11,6 +11,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   def purchase
-    binding.pry
   end
 end
