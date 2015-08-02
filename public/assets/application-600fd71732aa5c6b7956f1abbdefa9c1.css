@@ -9299,79 +9299,7 @@ a.now.button.radius:hover {
 .opacity-text {
   opacity: 0.8;
 }
-/*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
-/* line 36, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
-section.row.home-streak {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: 0;
-  height: 80vh;
-  background-color: #000000;
-  display: block;
-  position: relative;
-}
-
-/* line 49, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
-section.row.home-streak .streak-container {
-  border: 1px solid red;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #ffffff;
-  position: absolute;
-  margin-top: 2.5rem;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 30rem;
-  height: 30rem;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  top: 10vh;
-  text-align: center;
-}
-/* line 69, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
-section.row.home-streak .streak-container div.streak-counter, section.row.home-streak .streak-container div.streak-text {
-  font-family: "Quicksand", sans-serif;
-  font-size: 12.5rem;
-  color: #ffffff;
-  display: block;
-}
-/* line 76, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
-section.row.home-streak .streak-container div.streak-counter {
-  margin-top: 5rem;
-}
-/* line 79, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
-section.row.home-streak .streak-container div.streak-text {
-  margin-top: 32rem;
-  font-size: 2rem;
-}
-/* line 85, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
-section.row.home-streak #user-spending {
-  display: flex;
-  z-index: 9999;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 80vh;
-  border: 1px solid white;
-}
-/* line 97, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/homes/now.css.scss */
-section.row.home-streak #user-spending #spent-today,
-section.row.home-streak #user-spending #spent-all-time {
-  width: 50%;
-  background-color: #ffffff;
-}
-/* line 8, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/streaks/_streaks.css.scss */
+/* line 8, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
 #streak-bar {
   background-color: #000000;
   display: flex;
@@ -9381,22 +9309,92 @@ section.row.home-streak #user-spending #spent-all-time {
   box-shadow: 40px 40px 40px #ffffff;
 }
 
-/* line 18, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/streaks/_streaks.css.scss */
+/* line 18, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
 #streak-bar div {
   width: 50%;
   left: 0;
   right: 0;
 }
-/* line 24, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/streaks/_streaks.css.scss */
+/* line 24, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
 #streak-bar .left-bar {
   float: left;
 }
-/* line 27, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/streaks/_streaks.css.scss */
+/* line 27, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
 #streak-bar .right-bar {
   float: right;
 }
-/* line 31, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/streaks/_streaks.css.scss */
+/* line 31, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
 #streak-bar h5 {
   font-family: "Press Start 2P";
   font-size: 100%;
+}
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /* line 15, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
+  body {
+    font-size: 0.375rem;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /* line 22, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
+  body {
+    font-size: 0.5625rem;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /* line 29, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
+  body {
+    font-size: 0.75rem;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /* line 36, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
+  body {
+    font-size: 0.9375rem;
+  }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /* line 43, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
+  body {
+    font-size: 1.125rem;
+  }
+}
+/* line 48, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
+section#main-screen {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  height: 80vh;
+  background-color: #000000;
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* line 9, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+section#main-screen section * {
+  color: #00CC00;
+  font-family: "Press Start 2P";
+  margin-left: 25%;
+  margin-right: 25%;
+}
+/* line 16, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+section#main-screen #spent-today {
+  width: 100%;
+}
+/* line 21, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+section#main-screen #spent-all-time * {
+  float: right;
+}
+/* line 25, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+section#main-screen h4 {
+  margin-top: 10vh;
 }
