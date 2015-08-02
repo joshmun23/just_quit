@@ -1,0 +1,61 @@
+@import "foundation/functions";
+
+$quicksand-font: 'Quicksand', sans-serif;
+$streak-counter-size: 30rem;
+$black: #000000;
+$black-opacity: rgba(0,0,0, 0.3);
+$white: #ffffff;
+$red: #ff0000;
+$game-font: 'Press Start 2P', cursive;
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  body {
+    font-size: rem-calc(6);
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  body {
+    font-size: rem-calc(9);
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  body {
+    font-size: rem-calc(12);
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  body {
+    font-size: rem-calc(15);
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  body {
+    font-size: rem-calc(18);
+  }
+}
+
+section#main-screen {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  height: 80vh;
+  background-color: $black;
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}

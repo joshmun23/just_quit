@@ -1,0 +1,28 @@
+$black: #000000;
+$black-opacity: rgba(0,0,0, 0.3);
+$white: #ffffff;
+$red: #ff0000;
+$game-font: 'Press Start 2P';
+$matrix-green: #00CC00;
+
+section#main-screen {
+  section * {
+    color: $matrix-green;
+    font-family: $game-font;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  #spent-today {
+    width: 100%;
+  }
+  #spent-all-time {
+  }
+  #spent-all-time * {
+    float: right;
+  }
+
+  h4 {
+    margin-top: 10vh;
+  }
+}

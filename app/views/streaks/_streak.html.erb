@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>JustQuit</title>
-</head>
-<body>
-  <section id="streak-bar">
-    <div class="left-bar">
-      <h5 class="red-text opacity-text text-center">Cigarettes Smoked Today: <%= @user.smokes.last.total_count %></h5>
-    </div>
-    <div class="right-bar">
-      <h5 class="red-text opacity-text text-center">Cigarettes Smoked Lifetime: <%= @user.smokes.map {|smoke| smoke.total_count }.reduce(&:+) %></h5>
-    </div>
-  </section>
-</body>
-</html>
+<section id="streak-bar">
+  <div class="left-bar">
+    <h5 class="red-text opacity-text text-center">Cigarettes Smoked Today: <%= @user.smokes.last.total_count %></h5>
+  </div>
+  <div class="right-bar">
+    <h5 class="red-text opacity-text text-center">Cigarettes Smoked Lifetime: <%= @user.smokes.map {|smoke| smoke.total_count }.reduce(&:+) %></h5>
+  </div>
+</section>
