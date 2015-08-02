@@ -11,8 +11,8 @@
  * file per style scope.
  *
  *= require foundation_and_overrides
- *= require_tree .
  *= require_self
+ *= require_tree .
 
  */
 
@@ -49,7 +49,7 @@ li {
 }
 .container {
   text-align: center;
-  margin-top: 20%;x
+  margin-top: 20%;
 }
 
 .income-field {
@@ -59,4 +59,30 @@ li {
 
 .button {
   border-radius: 5em;
+}
+
+.now.button.radius {
+  border: solid 1px #000000;
+  border-radius: 15%;
+}
+
+a.now.button.radius:hover {
+  background-color: #ff0000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.decoration-none {
+  text-decoration: none;
+  border-bottom: solid 1px #ffffff;
+}
+
+#sign-in-sign-up-msg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10rem;
+  bottom: 0;
 }

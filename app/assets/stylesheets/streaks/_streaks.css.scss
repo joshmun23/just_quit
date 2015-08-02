@@ -1,0 +1,37 @@
+@import url('http://fonts.googleapis.com/css?family=Press+Start+2P');
+
+$black: #000000;
+$black-opacity: rgba(0,0,0, 0.3);
+$white: #ffffff;
+$red: #ff0000;
+$game-font: 'Press Start 2P', cursive;
+$matrix-green: #00CC00;
+
+#streak-bar {
+  background-color: $black;
+  display: flex;
+  border-bottom: double 4px $matrix-green;
+  width: 100%;
+  padding-top: 1rem;
+  box-shadow: 40px 40px 40px $white;
+}
+
+#streak-bar {
+  div {
+    width: 50%;
+    left: 0;
+    right: 0;
+  }
+
+  .left-bar {
+    float: left;
+  }
+  .right-bar {
+    float: right;
+  }
+
+  h5 {
+    font-family: $game-font;
+    font-size: 100%
+  }
+}

@@ -7,23 +7,38 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <section class="row home-streak">
-    <div class="small-12 medium-12 large-12 columns">
-      <div class="streak-counter">1</div class="streak-counter">
-    </div>
-    <div class="small-12 medium-12 large-12 columns">
-      <div class="streak-text">day since your last cigarette</div class="streak-counter">
-    </div>
+    <% if @user %>
+      <%= render partial: "/streaks/streak" %>
+    <% end %>
 
-  </section>
+    <section class="row home-streak">
+      <% if @user %>
+        <div class="small-12 medium-12 large-12 columns streak-container">
+          <div class="streak-counter">1</div class="streak-counter">
+        </div>
+        <div class="small-12 medium-12 large-12 columns streak-container">
+          <div class="streak-text">day since your last cigarette</div class="streak-counter">
+        </div>
+      <% end %>
+    </section>
 
-  <div class="small-6 medium-6 large-6 columns">
-    <a href="#" class="now button radius right">Radius Button</a>
-  </div>
+    <% if @user %>
+      <div class="small-6 medium-6 large-6 columns">
+        <%= link_to "Smoke", user_smokes_path(@user), method: 'post', class: "now button radius right" %>
+      </div>
 
-  <div class="small-6 medium-6 large-6 columns left">
-    <a href="#" class="now button radius left">Radius Button</a>
-  </div>
+      <div class="small-6 medium-6 large-6 columns left">
+        <%= link_to "Smoke", user_smokes_path(@user), method: 'post', class: "now button radius left" %>
+      </div>
+    <% else %>
+      <div id="sign-in-sign-up-msg">
+        <h3 class="text-center white-text">
+          <span><%= link_to 'Please sign-in', new_user_session_path, class: 'decoration-none white-text' %></span>
+          or
+          <span><%= link_to 'create a new account', new_user_registration_path, class: 'decoration-none white-text' %></span>
+        </h3>
+      </div>
+    <% end %>
 
   <%= javascript_include_tag 'application' %>
   <%= yield :extra_footer %>

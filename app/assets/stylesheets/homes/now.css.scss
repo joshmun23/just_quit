@@ -1,7 +1,10 @@
-$black: #000;
-$white: #fff;
 $quicksand-font: 'Quicksand', sans-serif;
 $streak-counter-size: 30rem;
+$black: #000000;
+$black-opacity: rgba(0,0,0, 0.3);
+$white: #ffffff;
+$red: #ff0000;
+$game-font: 'Press Start 2P', cursive;
 
 /*==========  Mobile First  ==========*/
 
@@ -31,9 +34,6 @@ $streak-counter-size: 30rem;
 }
 
 section.row.home-streak {
-}
-
-section.row.home-streak {
   left: 0;
   right: 0;
   top: 0;
@@ -42,8 +42,12 @@ section.row.home-streak {
   height: 80vh;
   background-color: $black;
   display: block;
+  position: relative;
+}
 
-  div.small-12.medium-12.large-12.columns {
+section.row.home-streak {
+  .streak-container {
+    border: 1px solid red;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -59,7 +63,7 @@ section.row.home-streak {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
 
-    top: 20vh;
+    top: 10vh;
     text-align: center;
 
     div.streak-counter, div.streak-text {
@@ -75,17 +79,7 @@ section.row.home-streak {
     div.streak-text {
       margin-top: 32rem;
       font-size: 2rem;
-
     }
   }
-
-
 }
 
-section.row {
-  max-width: 100%;
-}
-
-.now.button.radius {
-  border: 1px solid black;
-}

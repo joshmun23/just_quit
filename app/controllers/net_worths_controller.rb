@@ -5,6 +5,7 @@ class NetWorthsController < ApplicationController
   end
 
   def create
+    binding.pry
     @user = current_user
     @net_worth = NetWorth.create!(income: params[:net_worth][:income],
                                   user_id: @user.id)

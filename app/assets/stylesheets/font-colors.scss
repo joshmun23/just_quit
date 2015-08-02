@@ -1,0 +1,22 @@
+$white: #fff;
+$black: #000000;
+$black-opacity: rgba(0,0,0, 0.3);
+$white: #ffffff;
+$red: #ff0000;
+
+/* Font Colors */
+.white-text {
+  color: #ffffff;
+}
+
+.white-text:hover {
+  color: #ff0000;
+}
+
+.red-text {
+  color: $red;
+}
+
+.opacity-text {
+  opacity: 0.8;
+}
