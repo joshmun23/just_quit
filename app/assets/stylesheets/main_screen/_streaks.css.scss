@@ -4,11 +4,13 @@ $white: #ffffff;
 $red: #ff0000;
 $game-font: 'Press Start 2P';
 $matrix-green: #00CC00;
+$quicksand-font: 'Quicksand', sans-serif;
 
 #streak-bar {
-  background-color: $black;
+  background-color: $white;
   display: flex;
   border-bottom: double 4px $matrix-green;
+  box-shadow: 10px 10px 5px #888888;
   width: 100%;
   padding-top: 1rem;
   box-shadow: 40px 40px 40px $white;
@@ -29,7 +31,7 @@ $matrix-green: #00CC00;
   }
 
   h5 {
-    font-family: $game-font;
+    font-family: $quicksand-font;
     font-size: 100%
   }
 }

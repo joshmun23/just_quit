@@ -4,13 +4,73 @@ $white: #ffffff;
 $red: #ff0000;
 $game-font: 'Press Start 2P';
 $matrix-green: #00CC00;
+$quicksand-font: 'Quicksand', sans-serif;
 
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  body {
+    font-size: rem-calc(6);
+  }
+
+  section#main-screen * {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  body {
+    font-size: rem-calc(9);
+  }
+
+  section#main-screen * {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  body {
+    font-size: rem-calc(12);
+  }
+
+    section#main-screen * {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  body {
+    font-size: rem-calc(15);
+  }
+
+    section#main-screen * {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  body {
+    font-size: rem-calc(18);
+  }
+    section#main-screen * {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
 section#main-screen {
   section * {
-    color: $matrix-green;
-    font-family: $game-font;
-    margin-left: 25%;
-    margin-right: 25%;
+    color: $red;
+    font-family: $quicksand-font;
   }
 
   #spent-today {

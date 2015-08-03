@@ -1,7 +1,9 @@
-<section id="spent-today">
-  <h4>You've smoked $<%= @user.smokes.last.total_cost.round(2) %> worth of cigarettes today</h4>
-  <h4>Since <%= @user.smokes.first.created_at %>, you've smoked $<%= @user.smokes.map {|smoke| smoke.total_cost }.reduce(&:+).round(2) %> worth of cigarettes</h4>
-</section>
+<div class="small-12 medium-6 large-3 columns">
+  <section id="spent-today">
+      <h4>You've smoked $<%= @user.smokes.last.total_cost.round(2) %> worth of cigarettes today</h4>
+  </section>
 
-<section id="spent-all-time">
-</section>
+  <section id="spent-all-time">
+      <h4>Since <%= @user.smokes.first.created_at %>, you've smoked $<%= @user.smokes.map {|smoke| smoke.total_cost }.reduce(&:+).round(2) %> worth of cigarettes</h4>
+  </section>
+</div>
