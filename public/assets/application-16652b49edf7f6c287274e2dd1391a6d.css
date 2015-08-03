@@ -9174,37 +9174,43 @@ th.hide-for-touch {
 
 
  */
-/* line 20, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 19, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* line 23, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .row {
   max-width: 100%;
 }
 
-/* line 24, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 27, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 li {
   list-style: none;
   display: inline-block;
 }
 
-/* line 29, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 32, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .transactions {
   height: 80vh;
   overflow: auto;
 }
 
-/* line 34, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 37, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .purchase-button {
   text-align: center;
   margin-top: 30%;
   border-radius: 5em;
 }
 
-/* line 40, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 43, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .income-button {
   background-color: green;
   border-radius: 5em;
 }
 
-/* line 45, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 48, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .income-button:hover {
   background-color: white;
   color: green;
@@ -9212,46 +9218,46 @@ li {
   font-weight: bold;
 }
 
-/* line 51, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 54, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .container {
   text-align: center;
   margin-top: 20%;
 }
 
-/* line 56, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 59, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .income-field {
   text-align: center;
   border-radius: 5em;
 }
 
-/* line 61, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 64, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .button {
   border-radius: 5em;
 }
 
-/* line 65, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 68, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .now.button.radius {
   border: solid 1px #000000;
   border-radius: 15%;
 }
 
-/* line 70, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 73, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 a.now.button.radius:hover {
   background-color: #ff0000;
 }
 
-/* line 74, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 77, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 78, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 81, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .decoration-none {
   text-decoration: none;
   border-bottom: solid 1px #ffffff;
 }
 
-/* line 83, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 86, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 #sign-in-sign-up-msg {
   position: absolute;
   left: 0;
@@ -9299,33 +9305,34 @@ a.now.button.radius:hover {
 .opacity-text {
   opacity: 0.8;
 }
-/* line 8, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
+/* line 9, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
 #streak-bar {
-  background-color: #000000;
+  background-color: #ffffff;
   display: flex;
   border-bottom: double 4px #00CC00;
+  box-shadow: 10px 10px 5px #888888;
   width: 100%;
   padding-top: 1rem;
   box-shadow: 40px 40px 40px #ffffff;
 }
 
-/* line 18, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
+/* line 20, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
 #streak-bar div {
   width: 50%;
   left: 0;
   right: 0;
 }
-/* line 24, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
+/* line 26, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
 #streak-bar .left-bar {
   float: left;
 }
-/* line 27, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
+/* line 29, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
 #streak-bar .right-bar {
   float: right;
 }
-/* line 31, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
+/* line 33, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
 #streak-bar h5 {
-  font-family: "Press Start 2P";
+  font-family: "Quicksand", sans-serif;
   font-size: 100%;
 }
 /*==========  Mobile First  ==========*/
@@ -9371,32 +9378,95 @@ section#main-screen {
   top: 0;
   bottom: 0;
   margin: 0;
-  height: 80vh;
-  background-color: #000000;
+  height: 75vh;
+  background-color: #ffffff;
   display: flex;
   position: relative;
   width: 100%;
   padding: 0;
   margin: 0;
   overflow-y: auto;
-  border: solid 1px #ffffff;
 }
-/* line 9, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /* line 14, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+  body {
+    font-size: rem-calc(6);
+  }
+
+  /* line 18, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+  section#main-screen * {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /* line 26, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+  body {
+    font-size: rem-calc(9);
+  }
+
+  /* line 30, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+  section#main-screen * {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /* line 38, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+  body {
+    font-size: rem-calc(12);
+  }
+
+  /* line 42, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+  section#main-screen * {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /* line 50, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+  body {
+    font-size: rem-calc(15);
+  }
+
+  /* line 54, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+  section#main-screen * {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /* line 62, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+  body {
+    font-size: rem-calc(18);
+  }
+
+  /* line 65, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+  section#main-screen * {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+/* line 71, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
 section#main-screen section * {
-  color: #00CC00;
-  font-family: "Press Start 2P";
-  margin-left: 25%;
-  margin-right: 25%;
+  color: #ff0000;
+  font-family: "Quicksand", sans-serif;
 }
-/* line 16, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+/* line 76, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
 section#main-screen #spent-today {
   width: 100%;
 }
-/* line 21, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+/* line 81, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
 section#main-screen #spent-all-time * {
   float: right;
 }
-/* line 25, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+/* line 85, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
 section#main-screen h4 {
   margin-top: 10vh;
 }
