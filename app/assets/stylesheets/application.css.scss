@@ -15,7 +15,10 @@
  *= require_tree .
 
  */
-
+body {
+  height: 100vh;
+  overflow: hidden;
+}
 .row {
   max-width: 100%;
 }

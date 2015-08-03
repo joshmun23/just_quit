@@ -9378,6 +9378,8 @@ section#main-screen {
   width: 100%;
   padding: 0;
   margin: 0;
+  overflow-y: auto;
+  border: solid 1px #ffffff;
 }
 /* line 9, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
 section#main-screen section * {
