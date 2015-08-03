@@ -17,6 +17,11 @@ $red: #ff0000;
   color: $red;
 }
 
+.red-text:hover {
+  font-weight: bold;
+  background-color: $black;
+}
+
 .opacity-text {
   opacity: 0.8;
 }

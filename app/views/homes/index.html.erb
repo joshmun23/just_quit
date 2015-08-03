@@ -28,10 +28,10 @@
       </div>
     <% else %>
       <div id="sign-in-sign-up-msg">
-        <h3 class="text-center white-text">
-          <span><%= link_to 'Please sign-in', new_user_session_path, class: 'decoration-none white-text' %></span>
+        <h3 class="text-center">
+          <span><%= link_to 'Please sign-in', new_user_session_path, class: 'red-text' %></span>
           or
-          <span><%= link_to 'create a new account', new_user_registration_path, class: 'decoration-none white-text' %></span>
+          <span><%= link_to 'create a new account', new_user_registration_path, class: 'red-text' %></span>
         </h3>
       </div>
     <% end %>
