@@ -9177,7 +9177,7 @@ th.hide-for-touch {
 /* line 19, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 body {
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* line 23, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
@@ -9380,7 +9380,7 @@ section#main-screen {
   top: 0;
   bottom: 0;
   margin: 0;
-  height: 75vh;
+  max-height: 75vh;
   background-color: #ffffff;
   display: flex;
   position: relative;
