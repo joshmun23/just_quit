@@ -52,7 +52,7 @@ section#main-screen {
   top: 0;
   bottom: 0;
   margin: 0;
-  height: 75vh;
+  max-height: 75vh;
   background-color: $white;
   display: flex;
   position: relative;
