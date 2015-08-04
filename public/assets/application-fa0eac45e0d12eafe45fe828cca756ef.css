@@ -9231,33 +9231,30 @@ li {
 }
 
 /* line 64, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
-.button {
-  border-radius: 5em;
-}
-
-/* line 68, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .now.button {
   border: solid 1px #000000;
   background-color: #000000;
+  color: #ffffff;
 }
 
-/* line 73, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 70, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 a.now.button:hover {
-  background-color: #ff0000;
+  background-color: #ffffff;
+  color: #ff0000;
 }
 
-/* line 77, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 75, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 81, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 79, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 .decoration-none {
   text-decoration: none;
   border-bottom: solid 1px #ffffff;
 }
 
-/* line 86, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
+/* line 84, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
 #sign-in-sign-up-msg {
   position: absolute;
   left: 0;
