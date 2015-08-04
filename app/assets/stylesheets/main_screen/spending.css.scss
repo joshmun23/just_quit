@@ -70,18 +70,18 @@ $quicksand-font: 'Quicksand', sans-serif;
 section#main-screen {
   section * {
     font-family: $quicksand-font;
+    font-weight: bold;
   }
+}
 
-  #spent-today {
-    width: 100%;
-  }
-  #spent-all-time {
-  }
-  #spent-all-time * {
-    float: right;
-  }
+#spending-container {
+  display: flex;
+  width: 100%;
+  padding-top: 10vh;
+}
 
-  h4 {
-    margin-top: 10vh;
+#spending-container {
+  #spent-today, #spent-all-time {
+    width: 50%;
   }
 }

@@ -5,11 +5,11 @@ $red: #ff0000;
 $game-font: 'Press Start 2P';
 $matrix-green: #00CC00;
 $quicksand-font: 'Quicksand', sans-serif;
+$lobster-font: 'Lobster', cursive;
 
 #streak-bar {
   background-color: $white;
   display: flex;
-  border-bottom: solid 1px $red;
   box-shadow: 10px 10px 5px #888888;
   width: 100%;
   padding-top: 1rem;
@@ -31,7 +31,7 @@ $quicksand-font: 'Quicksand', sans-serif;
   }
 
   h5 {
-    font-family: $quicksand-font;
+    font-family: $lobster-font;
     font-size: 100%
   }
 }

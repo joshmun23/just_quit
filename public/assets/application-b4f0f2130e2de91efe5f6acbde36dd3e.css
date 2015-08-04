@@ -9308,11 +9308,10 @@ li {
 .opacity-text {
   opacity: 0.8;
 }
-/* line 9, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
+/* line 10, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
 #streak-bar {
   background-color: #ffffff;
   display: flex;
-  border-bottom: solid 1px #ff0000;
   box-shadow: 10px 10px 5px #888888;
   width: 100%;
   padding-top: 1rem;
@@ -9335,46 +9334,46 @@ li {
 }
 /* line 33, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/_streaks.css.scss */
 #streak-bar h5 {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Lobster", cursive;
   font-size: 100%;
 }
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
-  /* line 15, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
+  /* line 16, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
   body {
     font-size: 0.375rem;
   }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-  /* line 22, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
+  /* line 23, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
   body {
     font-size: 0.5625rem;
   }
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  /* line 29, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
+  /* line 30, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
   body {
     font-size: 0.75rem;
   }
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  /* line 36, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
+  /* line 37, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
   body {
     font-size: 0.9375rem;
   }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-  /* line 43, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
+  /* line 44, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
   body {
     font-size: 1.125rem;
   }
 }
-/* line 48, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
+/* line 49, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/main.css.scss */
 section#main-screen {
   left: 0;
   right: 0;
@@ -9459,16 +9458,17 @@ section#main-screen {
 /* line 71, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
 section#main-screen section * {
   font-family: "Quicksand", sans-serif;
+  font-weight: bold;
 }
-/* line 75, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
-section#main-screen #spent-today {
+
+/* line 77, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+#spending-container {
+  display: flex;
   width: 100%;
+  padding-top: 10vh;
 }
-/* line 80, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
-section#main-screen #spent-all-time * {
-  float: right;
-}
+
 /* line 84, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
-section#main-screen h4 {
-  margin-top: 10vh;
+#spending-container #spent-today, #spending-container #spent-all-time {
+  width: 50%;
 }
