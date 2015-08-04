@@ -60,17 +60,15 @@ li {
   border-radius: 5em;
 }
 
-.button {
-  border-radius: 5em;
-}
-
-.now.button.radius {
+.now.button {
   border: solid 1px #000000;
-  border-radius: 15%;
+  background-color: #000000;
+  color: #ffffff;
 }
 
-a.now.button.radius:hover {
-  background-color: #ff0000;
+a.now.button:hover {
+  background-color: #ffffff;
+  color: #ff0000;
 }
 
 .text-center {

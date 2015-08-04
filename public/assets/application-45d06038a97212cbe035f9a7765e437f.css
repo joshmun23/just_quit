@@ -9236,13 +9236,13 @@ li {
 }
 
 /* line 68, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
-.now.button.radius {
+.now.button {
   border: solid 1px #000000;
-  border-radius: 15%;
+  background-color: #000000;
 }
 
 /* line 73, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
-a.now.button.radius:hover {
+a.now.button:hover {
   background-color: #ff0000;
 }
 

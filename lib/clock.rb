@@ -4,7 +4,6 @@ require 'clockwork'
 
 include Clockwork
 
-# every(4.minutes, 'Queueing interval job') { Delayed::Job.enqueue IntervalJob.new }
-# every(1.day, 'Create New Smoke Day', :at => '00:00') { User.all.each { |user|
-#   user.smokes.create
-# } }
+every(1.day, 'Create New Smoke Day', :at => '12:00') { User.all.each { |user|
+  user.smokes.create
+} }
