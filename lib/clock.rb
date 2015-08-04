@@ -4,6 +4,6 @@ require 'clockwork'
 
 include Clockwork
 
-every(1.day, 'Create New Smoke Day', :at => '12:00') { User.all.each { |user|
+every(2.seconds, 'Create New Smoke Day') { User.all.each { |user|
   user.smokes.create
 } }

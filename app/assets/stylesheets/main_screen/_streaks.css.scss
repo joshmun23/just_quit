@@ -9,7 +9,7 @@ $quicksand-font: 'Quicksand', sans-serif;
 #streak-bar {
   background-color: $white;
   display: flex;
-  border-bottom: double 4px $matrix-green;
+  border-bottom: solid 1px $red;
   box-shadow: 10px 10px 5px #888888;
   width: 100%;
   padding-top: 1rem;

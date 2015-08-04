@@ -6714,7 +6714,7 @@ meta.foundation-mq-topbar {
 /* line 210, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
   font-weight: normal;
-  color: #ff0000;
+  color: #000000;
   width: 75%;
   display: block;
   padding: 0 0.9375rem;
@@ -6727,7 +6727,7 @@ meta.foundation-mq-topbar {
 }
 /* line 226, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar .toggle-topbar a {
-  color: #ff0000;
+  color: #000000;
   text-transform: uppercase;
   font-size: 0.8125rem;
   font-weight: bold;
@@ -6747,7 +6747,7 @@ meta.foundation-mq-topbar {
   height: 34px;
   line-height: 33px;
   padding: 0 2.5rem 0 0.9375rem;
-  color: #ff0000;
+  color: #000000;
   position: relative;
 }
 /* line 129, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_global.scss */
@@ -6759,7 +6759,7 @@ meta.foundation-mq-topbar {
   top: 50%;
   margin-top: -8px;
   right: 0.9375rem;
-  box-shadow: 0 0 0 1px #ff0000, 0 7px 0 1px #ff0000, 0 14px 0 1px #ff0000;
+  box-shadow: 0 0 0 1px #000000, 0 7px 0 1px #000000, 0 14px 0 1px #000000;
   width: 16px;
 }
 /* line 162, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_global.scss */
@@ -6816,7 +6816,7 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li > a {
   display: block;
   width: 100%;
-  color: #ff0000;
+  color: #000000;
   padding: 12px 0 12px 0;
   padding-left: 0.9375rem;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -6974,17 +6974,17 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li:hover:not(.has-form) > a {
   background-color: #555555;
   background: #333333;
-  color: #ff0000;
+  color: #000000;
 }
 /* line 363, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar-section ul li.active > a {
   background: #008CBA;
-  color: #ff0000;
+  color: #000000;
 }
 /* line 366, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar-section ul li.active > a:hover {
   background: #0078a0;
-  color: #ff0000;
+  color: #000000;
 }
 /* line 374, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar-section .has-form {
@@ -7001,7 +7001,7 @@ meta.foundation-mq-topbar {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent transparent transparent rgba(255, 0, 0, 0.4);
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.4);
   border-left-style: solid;
   margin-right: 0.9375rem;
   margin-top: -4.5px;
@@ -7064,7 +7064,7 @@ meta.foundation-mq-topbar {
 }
 /* line 430, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
-  color: #ff0000;
+  color: #000000;
   display: block;
 }
 /* line 434, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
@@ -7170,7 +7170,7 @@ meta.foundation-mq-topbar {
   .top-bar-section li.hover > a:not(.button) {
     background-color: #555555;
     background: #333333;
-    color: #ff0000;
+    color: #000000;
   }
   /* line 516, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button) {
@@ -7187,13 +7187,13 @@ meta.foundation-mq-topbar {
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     padding: 0 0.9375rem;
     line-height: 2.8125rem;
-    color: #ff0000;
+    color: #000000;
     background: #008CBA;
   }
   /* line 534, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button):hover {
     background: #0078a0;
-    color: #ff0000;
+    color: #000000;
   }
   /* line 544, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section .has-dropdown > a {
@@ -7206,7 +7206,7 @@ meta.foundation-mq-topbar {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: rgba(255, 0, 0, 0.4) transparent transparent transparent;
+    border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;
     border-top-style: solid;
     margin-top: -2.5px;
     top: 1.40625rem;
@@ -7262,7 +7262,7 @@ meta.foundation-mq-topbar {
   }
   /* line 592, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li a {
-    color: #ff0000;
+    color: #000000;
     line-height: 2.8125rem;
     white-space: nowrap;
     padding: 12px 0.9375rem;
@@ -7270,12 +7270,12 @@ meta.foundation-mq-topbar {
   }
   /* line 601, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
-    color: #ff0000;
+    color: #000000;
     background: #333333;
   }
   /* line 606, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
-    color: #ff0000;
+    color: #000000;
     background-color: #555555;
     background: #333333;
   }
@@ -7327,12 +7327,12 @@ meta.foundation-mq-topbar {
   .no-js .top-bar-section ul li:hover > a {
     background-color: #555555;
     background: #333333;
-    color: #ff0000;
+    color: #000000;
   }
   /* line 677, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:active > a {
     background: #008CBA;
-    color: #ff0000;
+    color: #000000;
   }
   /* line 685, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
@@ -9238,7 +9238,7 @@ li {
 }
 
 /* line 70, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/application.css.scss */
-a.now.button:hover {
+.now.button:hover {
   background-color: #ffffff;
   color: #ff0000;
 }
