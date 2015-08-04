@@ -1,3 +1,12 @@
-if (window.onload) {
-  debugger;
-}
+$('#test-button').on('click', function(e) {
+  e.preventDefault();
+
+  var Hello = React.createClass({
+    render: function() {
+        return (<div>Hello {this.props.name}</div>);
+    }
+  });
+
+  React.render(<Hello name="World" />, document.getElementById('test-react'));
+})
+
