@@ -6616,7 +6616,7 @@ meta.foundation-mq-topbar {
 /* line 119, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .contain-to-grid {
   width: 100%;
-  background: #FFFFFF;
+  background: #000000;
 }
 /* line 123, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .contain-to-grid .top-bar {
@@ -6656,7 +6656,7 @@ meta.foundation-mq-topbar {
   height: 2.8125rem;
   line-height: 2.8125rem;
   position: relative;
-  background: #FFFFFF;
+  background: #000000;
   margin-bottom: 0;
 }
 /* line 162, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
@@ -6714,7 +6714,7 @@ meta.foundation-mq-topbar {
 /* line 210, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
   font-weight: normal;
-  color: #000000;
+  color: #FFFFFF;
   width: 75%;
   display: block;
   padding: 0 0.9375rem;
@@ -6727,7 +6727,7 @@ meta.foundation-mq-topbar {
 }
 /* line 226, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar .toggle-topbar a {
-  color: #000000;
+  color: #FFFFFF;
   text-transform: uppercase;
   font-size: 0.8125rem;
   font-weight: bold;
@@ -6773,7 +6773,7 @@ meta.foundation-mq-topbar {
 }
 /* line 276, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar.expanded .title-area {
-  background: #FFFFFF;
+  background: #000000;
 }
 /* line 279, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar.expanded .toggle-topbar a {
@@ -6803,7 +6803,7 @@ meta.foundation-mq-topbar {
 /* line 308, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
-  border-top: solid 1px gray;
+  border-top: solid 1px black;
   clear: both;
   height: 1px;
   width: 100%;
@@ -6816,7 +6816,7 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li > a {
   display: block;
   width: 100%;
-  color: #000000;
+  color: #FFFFFF;
   padding: 12px 0 12px 0;
   padding-left: 0.9375rem;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -6972,8 +6972,8 @@ meta.foundation-mq-topbar {
 }
 /* line 354, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar-section ul li:hover:not(.has-form) > a {
-  background-color: #555555;
-  background: #333333;
+  background-color: #000000;
+  background: #FFFFFF;
   color: #000000;
 }
 /* line 363, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
@@ -7064,7 +7064,7 @@ meta.foundation-mq-topbar {
 }
 /* line 430, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
-  color: #000000;
+  color: #FFFFFF;
   display: block;
 }
 /* line 434, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
@@ -7097,7 +7097,7 @@ meta.foundation-mq-topbar {
 @media only screen and (min-width: 40.063em) {
   /* line 457, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar {
-    background: #FFFFFF;
+    background: #000000;
     overflow: visible;
   }
   /* line 172, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_global.scss */
@@ -7137,7 +7137,7 @@ meta.foundation-mq-topbar {
   }
   /* line 481, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar.expanded {
-    background: #FFFFFF;
+    background: #000000;
   }
 
   /* line 484, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
@@ -7168,20 +7168,20 @@ meta.foundation-mq-topbar {
   }
   /* line 507, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section li.hover > a:not(.button) {
-    background-color: #555555;
-    background: #333333;
+    background-color: #000000;
+    background: #FFFFFF;
     color: #000000;
   }
   /* line 516, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button) {
     padding: 0 0.9375rem;
     line-height: 2.8125rem;
-    background: #FFFFFF;
+    background: #000000;
   }
   /* line 520, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background-color: #555555;
-    background: #333333;
+    background-color: #000000;
+    background: #FFFFFF;
   }
   /* line 529, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
@@ -7276,7 +7276,7 @@ meta.foundation-mq-topbar {
   /* line 606, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
     color: #000000;
-    background-color: #555555;
+    background-color: #000000;
     background: #333333;
   }
   /* line 615, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
@@ -7293,14 +7293,14 @@ meta.foundation-mq-topbar {
   .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
     border-bottom: none;
     border-top: none;
-    border-right: solid 1px white;
+    border-right: solid 1px #212121;
     clear: none;
     height: 2.8125rem;
     width: 0;
   }
   /* line 638, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section .has-form {
-    background: #FFFFFF;
+    background: #000000;
     padding: 0 0.9375rem;
     height: 2.8125rem;
   }
@@ -7325,8 +7325,8 @@ meta.foundation-mq-topbar {
 
   /* line 668, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:hover > a {
-    background-color: #555555;
-    background: #333333;
+    background-color: #000000;
+    background: #FFFFFF;
     color: #000000;
   }
   /* line 677, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.2/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
@@ -9312,7 +9312,7 @@ li {
 #streak-bar {
   background-color: #ffffff;
   display: flex;
-  border-bottom: double 4px #00CC00;
+  border-bottom: solid 1px #ff0000;
   box-shadow: 10px 10px 5px #888888;
   width: 100%;
   padding-top: 1rem;
@@ -9458,18 +9458,17 @@ section#main-screen {
 }
 /* line 71, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
 section#main-screen section * {
-  color: #ff0000;
   font-family: "Quicksand", sans-serif;
 }
-/* line 76, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+/* line 75, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
 section#main-screen #spent-today {
   width: 100%;
 }
-/* line 81, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+/* line 80, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
 section#main-screen #spent-all-time * {
   float: right;
 }
-/* line 85, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
+/* line 84, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/main_screen/spending.css.scss */
 section#main-screen h4 {
   margin-top: 10vh;
 }
