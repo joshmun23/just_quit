@@ -36,13 +36,15 @@
       </br>
     <% end %>
 
-    <div class="small-6 medium-6 large-6 columns">
-      <%= link_to "Smoke", user_smokes_path(@user), method: 'post', class: "now button right" %>
-    </div>
+    <% if @user %>
+      <div class="small-6 medium-6 large-6 columns">
+        <%= link_to "Smoke", user_smokes_path(@user), method: 'post', class: "now button right" %>
+      </div>
 
-    <div class="small-6 medium-6 large-6 columns left">
-      <%= link_to "Not to Smoke", user_smokes_path(@user), method: 'post', class: "now button left" %>
-    </div>
+      <div class="small-6 medium-6 large-6 columns left">
+        <%= link_to "Not to Smoke", user_smokes_path(@user), method: 'post', class: "now button left" %>
+      </div>
+    <% end %>
 
     <section id="main-screen">
       <br><br>
