@@ -1,6 +1,6 @@
 class RemoveMissingColumnsOnSmokes < ActiveRecord::Migration
   def up
-    add_column :smokes, :decision, :boolean, null: false
+    add_column :smokes, :decision, :boolean
     add_column :smokes, :reason, :string
     add_column :smokes, :emotion, :string
     add_column :smokes, :habit, :string
