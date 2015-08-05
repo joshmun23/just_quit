@@ -14,9 +14,9 @@
     <% else %>
       <div id="sign-in-sign-up-msg">
         <h3 class="text-center">
-          <span><%= link_to 'Please sign-in', new_user_session_path, class: 'red-text' %></span>
+          <span><%= link_to 'Please sign-in', new_user_session_path, class: 'white-text' %></span>
           or
-          <span><%= link_to 'create a new account', new_user_registration_path, class: 'red-text' %></span>
+          <span><%= link_to 'create a new account', new_user_registration_path, class: 'white-text' %></span>
         </h3>
       </div>
     <% end %>
@@ -38,11 +38,11 @@
       <% end %>
 
       <div class="small-6 medium-6 large-6 columns">
-        <%= link_to "Smoke", user_smokes_path(@user), method: 'post', class: "now button right" %>
+        <%= link_to "Smoke", new_user_smoke_path(@user), method: 'get', class: "button right", id: "decision-smoke" %>
       </div>
 
       <div class="small-6 medium-6 large-6 columns left">
-        <%= link_to "Not to Smoke", user_smokes_path(@user), method: 'post', class: "now button left" %>
+        <%= link_to "Not to Smoke", new_user_smoke_path(@user), method: 'get', class: "button left", id: "decision-not-smoke" %>
       </div>
     <% end %>
   </section>

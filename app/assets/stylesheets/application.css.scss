@@ -16,6 +16,12 @@
 
  */
 $quicksand-font: 'Quicksand', sans-serif;
+$white: #ffffff;
+$black: #000000;
+$black-opacity: rgba(0,0,0, 0.3);
+$white: #ffffff;
+$red: #ff0000;
+$matrix-green: #00CC00;
 
 body {
   overflow: auto;
@@ -62,17 +68,6 @@ li {
 .income-field {
   text-align: center;
   border-radius: 5em;
-}
-
-.now.button {
-  border: solid 1px #000000;
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.now.button:hover {
-  background-color: #ffffff;
-  color: #ff0000;
 }
 
 .text-center {

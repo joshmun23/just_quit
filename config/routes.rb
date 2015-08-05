@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :users do
     resources :purchases, only: [:new, :create, :show]
     resources :net_worths, only: [:new, :show, :create]
-    resources :smokes, only: [:new, :create]
+    resources :smokes, only: [:new, :create, :update]
   end
 end

@@ -6,11 +6,13 @@ $red: #ff0000;
 
 /* Font Colors */
 .white-text {
-  color: #ffffff;
+  color: $white;
 }
 
 .white-text:hover {
-  color: #ff0000;
+  color: $white;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .red-text {

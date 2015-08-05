@@ -1,0 +1,8 @@
+<section id="smokers-choice">
+  <div class="small-12 columns container">
+    <%= form_for [@user, @smoke] do |f| %>
+      <%= f.button :smoke %>
+      <%= f.button :not_to_smoke %>
+    <% end %>
+  </div>
+</section>

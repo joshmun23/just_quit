@@ -29,6 +29,8 @@ $lobster-font: 'Lobster', cursive;
 
   h5 {
     font-family: $lobster-font;
-    font-size: 100%
+    font-size: 100%;
+    color: $white;
+    letter-spacing: 2px;
   }
 }
