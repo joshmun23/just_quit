@@ -1,0 +1,19 @@
+$black: #000000;
+$black-opacity: rgba(0,0,0, 0.3);
+$white: #ffffff;
+$red: #ff0000;
+$game-font: 'Press Start 2P';
+$matrix-green: #00CC00;
+$quicksand-font: 'Quicksand', sans-serif;
+
+#cost-container {
+  display: flex;
+  width: 100%;
+  padding-top: 10vh;
+}
+
+#cost-container {
+  #spent-today, #spent-all-time {
+    width: 50%;
+  }
+}

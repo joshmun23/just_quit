@@ -8,12 +8,9 @@ $quicksand-font: 'Quicksand', sans-serif;
 $lobster-font: 'Lobster', cursive;
 
 #streak-bar {
-  background-color: $white;
   display: flex;
-  box-shadow: 10px 10px 5px #888888;
   width: 100%;
   padding-top: 1rem;
-  box-shadow: 40px 40px 40px $white;
 }
 
 #streak-bar {

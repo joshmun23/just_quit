@@ -15,10 +15,13 @@
  *= require_tree .
 
  */
+$quicksand-font: 'Quicksand', sans-serif;
+
 body {
-  height: 100vh;
   overflow: auto;
+  font-family: $quicksand-font;
 }
+
 .row {
   max-width: 100%;
 }
@@ -50,6 +53,7 @@ li {
   border-radius: 5em;
   font-weight: bold;
 }
+
 .container {
   text-align: center;
   margin-top: 20%;

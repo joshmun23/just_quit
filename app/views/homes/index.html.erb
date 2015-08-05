@@ -7,6 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+  <section id="decision">
     <% if @user %>
       <%= render partial: "/streaks/streak" %>
     <% else %>
@@ -18,19 +20,17 @@
         </h3>
       </div>
     <% end %>
-
-
     <% if @user %>
       <% 3.times do %>
         </br>
       <% end %>
       <div class="row">
         <div class="small-12 medium-12 large-9 large-centered columns">
-          Each time we light up a cigarette, we make a decision, conscious or unconscious.
-
-          Sometimes we forget why we ever took our first drag and can't explain why everytime it rains or we enjoy a nice cup of coffee, we just need to open up a pack.
-
+          <h5 class="mission-statement text-center">Each time we light up a cigarette, we make a decision, conscious or unconscious.</h5>
+          <h5 class="mission-statement text-center">Whether we crave a smoke everytime it rains or when we become stressed,</h5>
+          <h5 class="mission-statement text-center">
           JustQuit is here to help each decision become a conscious decision.
+          </h5>
         </div>
       </div>
       <% 3.times do %>
@@ -45,6 +45,7 @@
         <%= link_to "Not to Smoke", user_smokes_path(@user), method: 'post', class: "now button left" %>
       </div>
     <% end %>
+  </section>
 
     <section id="main-screen">
       <br><br>
@@ -53,58 +54,18 @@
       <% end %>
     </section>
 
+    <% 3.times do %>
+      </br>
+    <% end %>
+
     <% if @user %>
-      <div class="chart-container">
-        <div class="row">
-          <div id="chart_div" class="small-12 medium-6 large-6 small-centered medium-centered large-centered columns" style="border: 1px solid">
-
-          </div>
-        </div>
-        <div class="row" style="margin-top: 10vh">
-          <div id="chart_div1" class="small-12 medium-6 large-6 small-centered medium-centered large-centered columns" style="border: 1px solid">
-
-          </div>
+      <div class="row">
+        <div class="small-12 small-centered medium-12 medium-centerd large-12 large-centered">
+          <section id="charts">
+          </section>
         </div>
       </div>
     <% end %>
-
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-
-      // Load the Visualization API and the piechart package.
-      google.load('visualization', '1.0', {'packages':['corechart']});
-
-      // Set a callback to run when the Google Visualization API is loaded.
-      google.setOnLoadCallback(drawChart);
-
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
-      function drawChart() {
-
-        // Create the data table.
-      var data = google.visualization.arrayToDataTable([
-         ['Day', 'Total Cigarettes', 'Cost', { role: 'style' }],
-         ['7/1/2015', 10, 8.94, '#b87333'],            // RGB value
-         ['7/2/2015', 14, 10.49, 'silver'],            // English color name
-         ['7/3/2015', 18, 19.30, 'gold'],
-
-       ['7/4/2015', 20, 21.45, 'color: #e5e4e2' ], // CSS-style declaration
-      ]);
-
-        // Set chart options
-        var options = {'title':'Daily Cigarette Consumption',
-                       'width':600,
-                       'height':400,
-                     };
-
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div1'));
-        chart.draw(data, options);
-      }
-    </script>
 
   <%= javascript_include_tag 'application' %>
   <%= yield :extra_footer %>
