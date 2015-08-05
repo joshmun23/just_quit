@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    <% if @user && !@user.smokes.empty? %>
+    <% if @user %>
       <%= render partial: "/streaks/streak" %>
     <% else %>
       <div id="sign-in-sign-up-msg">
@@ -19,7 +19,33 @@
       </div>
     <% end %>
 
+    <% 3.times do %>
+      </br>
+    <% end %>
+
+    <div class="row">
+      <div class="small-12 medium-12 large-9 large-centered columns">
+        Each time we light up a cigarette, we make a decision, conscious or unconscious.
+
+        Sometimes we forget why we ever took our first drag and can't explain why everytime it rains or we enjoy a nice cup of coffee, we just need to open up a pack.
+
+        JustQuit is here to help each decision become a conscious decision.
+      </div>
+    </div>
+    <% 3.times do %>
+      </br>
+    <% end %>
+
+    <div class="small-6 medium-6 large-6 columns">
+      <%= link_to "Smoke", user_smokes_path(@user), method: 'post', class: "now button right" %>
+    </div>
+
+    <div class="small-6 medium-6 large-6 columns left">
+      <%= link_to "Not to Smoke", user_smokes_path(@user), method: 'post', class: "now button left" %>
+    </div>
+
     <section id="main-screen">
+      <br><br>
       <% if @user && !@user.smokes.empty? %>
         <%= render partial: "/partials/user_spending" %>
       <% end %>

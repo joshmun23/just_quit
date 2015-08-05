@@ -1,17 +1,8 @@
 <section id="streak-bar">
   <div class="left-bar">
-    <h5 class="text-center">Cigarettes Smoked Today: <%= @user.smokes.last.total_count %></h5>
+    <h5 class="text-center">Cigarettes Smoked Today: <%= @user.fetch_smoke_records_count('daily') %></h5>
   </div>
   <div class="right-bar">
-    <h5 class="text-center">Cigarettes Smoked Lifetime: <%= @user.smokes.map {|smoke| smoke.total_count }.reduce(&:+) %></h5>
+    <h5 class="text-center">Cigarettes Smoked Lifetime: <%= @user.smokes.count %></h5>
   </div>
 </section>
-
-
-<div class="small-6 medium-6 large-6 columns">
-  <%= link_to "Smoke", user_smokes_path(@user), method: 'post', class: "now button right" %>
-</div>
-
-<div class="small-6 medium-6 large-6 columns left">
-  <%= link_to "Smoke", user_smokes_path(@user), method: 'post', class: "now button left" %>
-</div>

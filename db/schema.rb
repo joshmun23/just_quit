@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150804192351) do
+ActiveRecord::Schema.define(version: 20150805163228) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,11 +50,12 @@ ActiveRecord::Schema.define(version: 20150804192351) do
   end
 
   create_table "smokes", force: :cascade do |t|
-    t.integer  "total_count", default: 0
-    t.float    "total_cost",  default: 0.0
     t.integer  "user_id"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean  "decision"
+    t.string   "reason"
+    t.string   "emotion"
   end
 
   create_table "streaks", force: :cascade do |t|

@@ -1,0 +1,12 @@
+@schedules = Schedule.where("team_id = ? and event = ? and time >= ?", [current_user[:team_id], "1", Time.zone.now])
+
+Smoke.where("created_at >= ?, [Time.zone.now]")
+
+Date.today.to_time.beginning_of_day
+Date.today.to_time.end_of_day
+
+
+Smoke.where("created_at >= #{Date.today.to_time.beginning_of_day}")
+
+@smokes = Smoke.where("created_at > ? AND created_at < ?", DateTime.now.beginning_of_day, DateTime.now.beginning_of_day)
+

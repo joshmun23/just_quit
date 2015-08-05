@@ -1,9 +1,15 @@
-<section id="spending-container">
-  <section id="spent-today">
-      <h4>You've smoked $<%= @user.smokes.last.total_cost.round(2) %> worth of cigarettes today</h4>
-  </section>
+<% if @user.smokes.any? %>
+  <section id="spending-container">
+    <section id="spent-today">
+        <h4>You've smoked $<%= @user.smoke_cost('daily') %> worth of cigarettes today</h4>
+        <br>
+        <h4><%= @user.fetch_smoke_records_count('daily') %> cigarettes have taken <%= @user.health_cost('daily') %> minutes off your life</h4>
+    </section>
 
-  <section id="spent-all-time">
-      <h4>Since <%= @user.smokes.first.created_at %>, you've smoked $<%= @user.smokes.map {|smoke| smoke.total_cost }.reduce(&:+).round(2) %> worth of cigarettes</h4>
+    <section id="spent-all-time">
+        <h4>Since <%= "#{@user.smokes.first.created_at.month}/#{@user.smokes.first.created_at.day}/#{@user.smokes.first.created_at.year}" %>, you've smoked $<%= @user.smoke_cost('all-time') %> worth of cigarettes</h4>
+        <br>
+        <h4><%= @user.fetch_smoke_records_count('all-time') %> cigarettes have taken <%= @user.health_cost('all-time') %> minutes off your life</h4>
+    </section>
   </section>
-</section>
+<% end %>

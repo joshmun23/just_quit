@@ -4,8 +4,7 @@ class SmokesController < ApplicationController
 
   def create
     @user = current_user
-    smoke = @user.smokes.last ? @user.smokes.last : @user.smokes.create
-    smoke.update_smoke
+    @user.smokes.create(decision: true)
 
     @user.streak ||= Streak.new
     @user.streak.update_streak
