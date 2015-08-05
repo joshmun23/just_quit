@@ -9279,7 +9279,7 @@ li {
   background-color: #000000;
   border: solid 1px #ff0000;
   color: #ffffff;
-  border-radius: 50%;
+  border-radius: 15%;
   transition: background-color 2s, color 2s, border 2s, border-radius 2s;
 }
 
@@ -9295,7 +9295,7 @@ li {
   background-color: #ffffff;
   color: #ff0000;
   border: solid 1px #ff0000;
-  border-radius: 50%;
+  border-radius: 15%;
   transition: background-color 1.5s, border 1.5s, color 1.5s, border-radius 2s;
 }
 /* Font Colors */
