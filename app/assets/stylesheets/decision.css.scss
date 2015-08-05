@@ -34,7 +34,7 @@ $lobster-font: 'Lobster', cursive;
   background-color: $black;
   border: solid 1px $red;
   color: $white;
-  border-radius: 50%;
+  border-radius: 15%;
   transition: background-color 2s, color 2s, border 2s, border-radius 2s;
 }
 
@@ -48,6 +48,6 @@ $lobster-font: 'Lobster', cursive;
   background-color: $white;
   color: $red;
   border: solid 1px $red;
-  border-radius: 50%;
+  border-radius: 15%;
   transition: background-color 1.5s, border 1.5s, color 1.5s, border-radius 2s;
 }

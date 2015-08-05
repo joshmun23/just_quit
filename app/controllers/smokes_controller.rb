@@ -5,10 +5,8 @@ class SmokesController < ApplicationController
   end
 
   def create
-    binding.pry
     @user = current_user
-    @user.smokes.create
-
+    @user.smokes.create(decision: true)
 
     @user.streak ||= Streak.new
     @user.streak.update_streak
@@ -17,7 +15,6 @@ class SmokesController < ApplicationController
   end
 
   def update
-    binding.pry
     @user = current_user
     @smoke = @user.smokes.find()
   end
