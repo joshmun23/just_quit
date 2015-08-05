@@ -1,8 +1,11 @@
-<section id="streak-bar">
-  <div class="left-bar">
-    <h5 class="text-center">Cigarettes Smoked Today: <%= @user.fetch_smoke_records_count('daily') %></h5>
-  </div>
-  <div class="right-bar">
-    <h5 class="text-center">Cigarettes Smoked Lifetime: <%= @user.smokes.count %></h5>
-  </div>
-</section>
+
+<% if @user.smokes.any? %>
+  <section id="streak-bar">
+    <div class="left-bar">
+      <h5 class="text-center">Cigarettes Smoked Today: <%= @user.fetch_smoke_records_count('daily') %></h5>
+    </div>
+    <div class="right-bar">
+      <h5 class="text-center">Cigarettes Smoked Lifetime: <%= @user.smokes.count %></h5>
+    </div>
+  </section>
+<% end %>
