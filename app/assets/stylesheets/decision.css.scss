@@ -6,10 +6,39 @@ $game-font: 'Press Start 2P';
 $matrix-green: #00CC00;
 $quicksand-font: 'Quicksand', sans-serif;
 $lobster-font: 'Lobster', cursive;
+$decision-height: 65vh;
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
 
 #decision {
-  background-color: rgba($red, 0.8);
-  height: 33vh;
+  background-color: $black;
+  height: $decision-height;
 }
 
 #decision {
@@ -49,5 +78,5 @@ $lobster-font: 'Lobster', cursive;
   color: $red;
   border: solid 1px $red;
   border-radius: 15%;
-  transition: background-color 1.5s, border 1.5s, color 1.5s, border-radius 2s;
+
 }
