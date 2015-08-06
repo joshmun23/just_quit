@@ -9257,8 +9257,8 @@ li {
 /* Large Devices, Wide Screens */
 /* line 39, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/decision.css.scss */
 #decision {
-  background-color: rgba(255, 0, 0, 0.8);
-  height: 33vh;
+  background-color: #000000;
+  height: 65vh;
 }
 
 /* line 45, /Users/joshmun23/side_projects/just_quit/app/assets/stylesheets/decision.css.scss */
