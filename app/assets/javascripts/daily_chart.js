@@ -1,7 +1,14 @@
 $(function () {
   $('#charts-container').highcharts({
-    var data = $.ajax('/users/' + userID + '/smokes', function() {
+    var data = $.ajax({
+      var query = { smokes: 'daily', options: {[
+        cost: true
+      ]} }
 
+      url : '/users/' + userID + '/smokes',
+      data : query,
+      dateType: :json,
+      method: 'get'
     });
 
     chart: {
@@ -19,8 +26,8 @@ $(function () {
         }
     },
     series: [{
-        name: 'Jane',
-        data: [1, 0, 4]
+        name: 'Jane', // later to be user.name
+        data: [4, 1, 4] // later to be an array of 7 days worth of smoked cigarettes
     }]
   });
 });
