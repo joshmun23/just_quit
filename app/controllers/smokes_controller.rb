@@ -14,6 +14,11 @@ class SmokesController < ApplicationController
     redirect_to root_path
   end
 
+  def index
+    @user = current_user
+    @smokes = current_user.smokes
+  end
+
   def update
     @user = current_user
     @smoke = @user.smokes.find()
