@@ -1,15 +1,18 @@
 $(function () {
-  $('#charts-container').highcharts({
-    // var data = $.ajax({
-    //   var query = { smokes: 'daily', options: {[
-    //     cost: true
-    //   ]} }
+    var userID = $('#decision-smoke').attr('href').match(/[0-9]/g).join('');
 
-    //   url : '/users/' + userID + '/smokes',
-    //   data : query,
-    //   dateType: :json,
-    //   method: 'get'
-    // });
+    var data = $.ajax({
+      // var query = { smokes: 'daily', options: {[
+      //   cost: true
+      // ]} }
+      url : '/users/' + userID + '/smokes',
+      data : { user_id: userID },
+      dataType: 'json',
+      method: 'get'
+    });
+
+    debugger;
+  $('#charts-container').highcharts({
 
     chart: {
         type: 'column'
