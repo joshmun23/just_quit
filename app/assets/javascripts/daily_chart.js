@@ -1,15 +1,15 @@
 $(function () {
   $('#charts-container').highcharts({
-    var data = $.ajax({
-      var query = { smokes: 'daily', options: {[
-        cost: true
-      ]} }
+    // var data = $.ajax({
+    //   var query = { smokes: 'daily', options: {[
+    //     cost: true
+    //   ]} }
 
-      url : '/users/' + userID + '/smokes',
-      data : query,
-      dateType: :json,
-      method: 'get'
-    });
+    //   url : '/users/' + userID + '/smokes',
+    //   data : query,
+    //   dateType: :json,
+    //   method: 'get'
+    // });
 
     chart: {
         type: 'column'
