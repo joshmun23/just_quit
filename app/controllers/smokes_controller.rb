@@ -1,4 +1,6 @@
 class SmokesController < ApplicationController
+  respond_to :json, :html
+
   def new
     @user = current_user
     @smoke = @user.smokes.new
@@ -16,10 +18,20 @@ class SmokesController < ApplicationController
 
   def index
     @user = current_user
-    @smokes = current_user.smokes.group_by_day(:created_at).count
-    binding.pry
+    # @smokes = current_user.smokes
+    @smokes = current_user.smokes.group_by_day(:created_at).count.map do |smoke|
+      result = {}
 
-    render json: @smokes.to_json
+      result[:date] = smoke[0].to_date
+      result[:count] = smoke[1]
+
+      result
+    end
+
+    respond_to do |format|
+    #   binding.pry
+    #   format.json { render json: @smokes }
+    end
   end
 
   def update
